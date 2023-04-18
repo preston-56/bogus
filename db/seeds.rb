@@ -53,7 +53,7 @@
   # Create GPS logs
   Merchandiser.all.each do |merchandiser|
     rand(10..50).times do
-      GPSLog.create(
+      GpsLog.create(
         merchandiser_id: merchandiser.id,
         latitude: Faker::Address.latitude,
         longitude: Faker::Address.longitude,
